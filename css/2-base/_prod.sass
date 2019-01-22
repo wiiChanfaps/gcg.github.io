@@ -1,0 +1,60 @@
+#prod
+	background: #d3d3d3
+		image: url(../images/pattern.jpg)
+
+	.imageSection
+		h1
+			padding-top: 100px
+			text-align: center
+	.prod
+		height: 100%
+		padding: 100px 0
+		max-width: 640px
+		margin: 0 auto
+		text-align: center
+		position: relative
+		overflow: hidden
+
+		.clothes-pics
+			figure
+				margin-bottom: 20px
+				position: relative
+				opacity: 0
+				transform: translateX(30px)
+				transition: all 0.4s ease-in-out
+				overflow: hidden
+				cursor: pointer
+
+				&.is-showing
+					opacity: 1
+					transform: translateX(0px)
+
+				img
+					display: block
+					transform: scale(1)
+					transition: all 0.3s ease-in-out
+
+				&:hover
+					figcaption
+						left: 0%
+
+					img
+						transform: scale(1.1)
+
+				figcaption
+					position: absolute
+					bottom: 10px
+					left: -100%
+					background: black
+					color: white
+					padding: 2px 8px
+					font-size: 11px
+					transition: all 0.3s ease-in-out
+
+	.line2
+		background:
+			color: $primary-color
+		height: 3px
+		width: 70px
+		margin: 5em auto 0 auto
+
